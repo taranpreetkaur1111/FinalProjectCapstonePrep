@@ -22,7 +22,46 @@ This project predicts whether a higher education student will **drop out**, rema
 
 ## How to Run
 
-1. Create a virtual environment and install dependencies:
+### **1. Install Dependencies**
+#pip install pandas numpy scikit-learn matplotlib
 
-   ```bash
-   pip install -r requirements.txt
+
+### **2. Load the Notebook**
+Open `notebook.ipynb` in Jupyter Notebook, VS Code, or Colab.
+
+### **3. Run All Cells in Order**
+The notebook performs:
+
+1. Load & preprocess dataset  
+2. Train two models:  
+   - Logistic Regression  
+   - Random Forest  
+3. Generate:  
+   - Confusion matrices  
+   - Weighted F1-score comparison  
+   - Feature importance plot  
+   - Correlation heatmap  
+
+All outputs appear inside the notebook.
+
+---
+
+##  Models Used
+###  Multinomial Logistic Regression
+Baseline linear classifier.
+
+###  Random Forest Classifier
+High-performing ensemble classifier.
+
+---
+
+## Evaluation Metrics
+- Accuracy  
+- Precision  
+- Recall  
+- Weighted & Macro F1-score  
+- Confusion Matrix  
+
+Random Forest consistently performs best in this project.
+
+
